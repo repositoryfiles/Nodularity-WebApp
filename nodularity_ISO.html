@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>丸み係数による球状化率の評価ツール</title>
+<title>丸み係数による球状化率（ISO法）</title>
 </head>
 <body>
 <p id="status">OpenCV.jsの読み込み…</p>
 
 <table>
   <tr>
-    <th>入力画像</th>
-    <th>評価画像</th>
+    <td>入力画像</td>
+    <td>評価画像</td>
   </tr>
   <tr>
     <td>
@@ -22,13 +22,12 @@
     </td>
   </tr>
   <tr>
-    <td>
+    <td valign="top">
       <input type="file" id="input_file" accept="image/*" >
     </td>
-    <td>
+    <td valign="top">
       <input type="button" value="球状化率の評価" id="graphite_ratio_btn">
-      青色：丸み係数>=0.6
-      <input type="button" value="画像のダウンロード" id="download_btn">
+      <input type="button" value="画像のダウンロード" id="download_btn"><br>青色：丸み係数>=0.6
     </td>
  </tr>
 </table>
